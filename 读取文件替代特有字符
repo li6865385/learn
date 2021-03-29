@@ -1,0 +1,7 @@
+def text_filter(word,censored_word='SNAP',changed_word='snap'):
+    return word.replace(censored_word,changed_word)
+
+filepath='E://change//'+input('文件名: ')+'.txt'
+f=open(filepath,encoding='utf-8')
+info=f.read()
+print(text_filter(info,'ENVI','envi'))
